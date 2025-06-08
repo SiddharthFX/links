@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const StarField = () => {
@@ -15,13 +14,13 @@ const StarField = () => {
       {stars.map((star) => (
         <div
           key={star.id}
-          className="absolute w-1 h-1 bg-violet-400 rounded-full opacity-60 animate-bounce"
+          className="absolute w-1.5 h-1.5 bg-violet-400 rounded-full opacity-80 animate-bounce blur-[0.5px]"
           style={{
             left: `${star.left}%`,
             top: `${star.top}%`,
             animationDelay: `${star.delay}s`,
             animationDuration: `${star.duration}s`,
-            boxShadow: '0 0 4px rgba(139, 92, 246, 0.6)',
+            boxShadow: '0 0 8px rgba(139, 92, 246, 0.8), 0 0 12px rgba(139, 92, 246, 0.6)',
           }}
         />
       ))}
