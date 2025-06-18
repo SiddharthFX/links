@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Linkedin, Twitter, ExternalLink } from 'lucide-react';
 import ProfileHeader from '../components/ProfileHeader';
 import SocialLink from '../components/SocialLink';
 import EmailButton from '../components/EmailButton';
@@ -68,6 +68,9 @@ const Index = () => {
             </div>
           </div>
 
+          {/* Connections Heading */}
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-800">Connections</h2>
+
           {/* Social Links */}
           <div className="social-links-container space-y-4 md:space-y-6 mb-16">
             {socialLinks.map((link, index) => (
@@ -79,6 +82,38 @@ const Index = () => {
                 delay={link.delay}
               />
             ))}
+          </div>
+
+          {/* Projects Section */}
+          <div className="mb-16">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-800">Projects</h2>
+            <div className="social-links-container space-y-4 md:space-y-6">
+              <a
+                href="https://medask-frontend-225915814557.us-central1.run.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link group block w-full bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-5 md:p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] hover:bg-white/20 animate-fade-in"
+                style={{ animationDelay: '800ms' }}
+              >
+                <div className="flex flex-col space-y-3">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center space-x-4">
+                      <div className="flex-shrink-0 transform group-hover:scale-110 transition-transform duration-300">
+                        <div className="w-10 h-10 rounded-full shadow-lg bg-white flex items-center justify-center">
+                          <img src="/medask-logo.png" alt="Medask AI Logo" className="w-8 h-8 object-contain" />
+                        </div>
+                      </div>
+                      <span className="text-lg md:text-xl font-medium text-gray-800 group-hover:text-violet-700 transition-colors duration-300">Medask AI</span>
+                    </div>
+                    <div className="text-gray-400 group-hover:text-violet-500 transition-all duration-300 transform group-hover:scale-110 group-hover:rotate-12">
+                      <ExternalLink className="w-5 h-5 md:w-6 md:h-6" />
+                    </div>
+                  </div>
+                  <p className="text-sm text-gray-600 font-medium">An AI Powered Health Companion</p>
+                  <p className="text-sm text-gray-500">MedaskAI is a modern AI-driven healthcare platform built using Google Cloud, Gemini AI, and MongoDB Atlas. It empowers users to understand prescriptions, explore natural remedies, ask health-related questions, and maintain a personal health journal.</p>
+                </div>
+              </a>
+            </div>
           </div>
 
           {/* Email Button */}
