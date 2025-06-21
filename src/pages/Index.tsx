@@ -5,6 +5,8 @@ import SocialLink from '../components/SocialLink';
 import EmailButton from '../components/EmailButton';
 import GradientOrbs from '../components/GradientOrbs';
 import StarField from '../components/StarField';
+import AboutSection from '../components/AboutSection';
+import SkillsSection from '../components/SkillsSection';
 
 const Index = () => {
   const socialLinks = [
@@ -68,6 +70,12 @@ const Index = () => {
             </div>
           </div>
 
+          {/* About Section */}
+          <AboutSection />
+
+          {/* Skills Section */}
+          <SkillsSection />
+
           {/* Connections Heading */}
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-800">Connections</h2>
 
@@ -111,6 +119,33 @@ const Index = () => {
                   </div>
                   <p className="text-sm text-gray-600 font-medium">An AI Powered Health Companion</p>
                   <p className="text-sm text-gray-500">MedaskAI is a modern AI-driven healthcare platform built using Google Cloud, Gemini AI, and MongoDB Atlas. It empowers users to understand prescriptions, explore natural remedies, ask health-related questions, and maintain a personal health journal.</p>
+                </div>
+              </a>
+
+              {/* Auditlink AI Project Card */}
+              <a
+                href="https://auditlinkai.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link group block w-full bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-5 md:p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] hover:bg-white/20 animate-fade-in"
+                style={{ animationDelay: '900ms' }}
+              >
+                <div className="flex flex-col space-y-3">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center space-x-4">
+                      <div className="flex-shrink-0 transform group-hover:scale-110 transition-transform duration-300">
+                        <div className="w-10 h-10 rounded-full shadow-lg bg-white flex items-center justify-center">
+                          <img src="/auditlink-logo.png" alt="Auditlink AI Logo" className="w-8 h-8 object-contain" />
+                        </div>
+                      </div>
+                      <span className="text-lg md:text-xl font-medium text-gray-800 group-hover:text-violet-700 transition-colors duration-300">Auditlink AI</span>
+                    </div>
+                    <div className="text-gray-400 group-hover:text-violet-500 transition-all duration-300 transform group-hover:scale-110 group-hover:rotate-12">
+                      <ExternalLink className="w-5 h-5 md:w-6 md:h-6" />
+                    </div>
+                  </div>
+                  <p className="text-sm text-gray-600 font-medium">An AI-Powered Smart Contract Auditor</p>
+                  <p className="text-sm text-gray-500">Auditlink AI is a next-gen smart contract auditing platform powered by Chainlink Functions and Gemini AI. It allows users to enter any contract address, fetch verified source code from Etherscan, and instantly receive an AI-audited security score with issue insights. Audit badges can be minted as NFTs, bringing transparency, trust, and verifiable security to the Web3 space.</p>
                 </div>
               </a>
             </div>
