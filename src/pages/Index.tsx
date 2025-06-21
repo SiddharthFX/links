@@ -7,6 +7,7 @@ import GradientOrbs from '../components/GradientOrbs';
 import StarField from '../components/StarField';
 import AboutSection from '../components/AboutSection';
 import SkillsSection from '../components/SkillsSection';
+import { Badge } from "../components/ui/badge";
 
 const Index = () => {
   const socialLinks = [
@@ -76,22 +77,6 @@ const Index = () => {
           {/* Skills Section */}
           <SkillsSection />
 
-          {/* Connections Heading */}
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-800">Connections</h2>
-
-          {/* Social Links */}
-          <div className="social-links-container space-y-4 md:space-y-6 mb-16">
-            {socialLinks.map((link, index) => (
-              <SocialLink
-                key={link.name}
-                name={link.name}
-                url={link.url}
-                icon={link.icon}
-                delay={link.delay}
-              />
-            ))}
-          </div>
-
           {/* Projects Section */}
           <div className="mb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-800">Projects</h2>
@@ -119,6 +104,13 @@ const Index = () => {
                   </div>
                   <p className="text-sm text-gray-600 font-medium">An AI Powered Health Companion</p>
                   <p className="text-sm text-gray-500">MedaskAI is a modern AI-driven healthcare platform built using Google Cloud, Gemini AI, and MongoDB Atlas. It empowers users to understand prescriptions, explore natural remedies, ask health-related questions, and maintain a personal health journal.</p>
+                  {/* Tech Stack for Medask AI */}
+                  <div className="flex flex-wrap gap-2 mt-2 md:gap-3">
+                    <Badge className="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 border-none">OCR Technology</Badge>
+                    <Badge className="bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200 border-none">AI API</Badge>
+                    <Badge className="bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200 border-none">MongoDB Atlas</Badge>
+                    <Badge className="bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200 border-none">Supabase AUTH</Badge>
+                  </div>
                 </div>
               </a>
 
@@ -146,9 +138,31 @@ const Index = () => {
                   </div>
                   <p className="text-sm text-gray-600 font-medium">An AI-Powered Smart Contract Auditor</p>
                   <p className="text-sm text-gray-500">Auditlink AI is a next-gen smart contract auditing platform powered by Chainlink Functions and Gemini AI. It allows users to enter any contract address, fetch verified source code from Etherscan, and instantly receive an AI-audited security score with issue insights. Audit badges can be minted as NFTs, bringing transparency, trust, and verifiable security to the Web3 space.</p>
+                  {/* Tech Stack for Auditlink AI */}
+                  <div className="flex flex-wrap gap-2 mt-2 md:gap-3">
+                    <Badge className="bg-cyan-100 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-200 border-none">Chainlink Functions</Badge>
+                    <Badge className="bg-fuchsia-100 text-fuchsia-800 dark:bg-fuchsia-900 dark:text-fuchsia-200 border-none">AI</Badge>
+                    <Badge className="bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200 border-none">Metamask Auth</Badge>
+                  </div>
                 </div>
               </a>
             </div>
+          </div>
+
+          {/* Connections Heading */}
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-800">Connections</h2>
+
+          {/* Social Links */}
+          <div className="social-links-container space-y-4 md:space-y-6 mb-16">
+            {socialLinks.map((link, index) => (
+              <SocialLink
+                key={link.name}
+                name={link.name}
+                url={link.url}
+                icon={link.icon}
+                delay={link.delay}
+              />
+            ))}
           </div>
 
           {/* Email Button */}
