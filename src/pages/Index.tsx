@@ -64,7 +64,7 @@ const Index = () => {
           {/* Name and Title */}
           <div className="text-center mb-16 animate-fade-in">
             <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">Siddharth</h1>
-            <div className="space-y-2 text-gray-600">
+            <div className="flex flex-col gap-2 items-center justify-center md:flex-row md:gap-6 md:space-y-0 text-gray-600">
               <p className="text-lg md:text-xl font-medium">Blockchain & Smart Contract Dev</p>
               <p className="text-lg md:text-xl font-medium">NQ Analyst</p>
               <p className="text-lg md:text-xl font-medium">AI/ML</p>
