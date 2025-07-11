@@ -146,6 +146,40 @@ const Index = () => {
                   </div>
                 </div>
               </a>
+
+              {/* Crypfolio Project Card */}
+              <a
+                href="https://crypfolio-pro.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link group block w-full bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-5 md:p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] hover:bg-white/20 animate-fade-in"
+                style={{ animationDelay: '1000ms' }}
+              >
+                <div className="flex flex-col space-y-3">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center space-x-4">
+                      <div className="flex-shrink-0 transform group-hover:scale-110 transition-transform duration-300">
+                        <div className="w-10 h-10 rounded-full shadow-lg bg-white flex items-center justify-center">
+                          <img src="/crypfolio-logo.png" alt="Crypfolio Logo" className="w-8 h-8 object-contain" />
+                        </div>
+                      </div>
+                      <span className="text-lg md:text-xl font-medium text-gray-800 group-hover:text-violet-700 transition-colors duration-300">Crypfolio</span>
+                    </div>
+                    <div className="text-gray-400 group-hover:text-violet-500 transition-all duration-300 transform group-hover:scale-110 group-hover:rotate-12">
+                      <ExternalLink className="w-5 h-5 md:w-6 md:h-6" />
+                    </div>
+                  </div>
+                  <p className="text-sm text-gray-600 font-medium">A Perfect Crypto Portfolio Tracker With Real-Time Data Monitoring</p>
+                  <p className="text-sm text-gray-500">Crypto Portfolio (Crypfolio) is a modern, privacy-friendly web app for tracking your cryptocurrency investments. It provides real-time market data, portfolio analytics, and a beautiful, responsive UI. All data is stored locally and automatically expires after 48 hours of inactivity for your privacy.</p>
+                  {/* Tech Stack for Crypfolio */}
+                  <div className="flex flex-wrap gap-2 mt-2 md:gap-3">
+                    <Badge className="bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200 border-none">CoinGecko API</Badge>
+                    <Badge className="bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200 border-none">JavaScript</Badge>
+                    <Badge className="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 border-none">Real-time Data</Badge>
+                    <Badge className="bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200 border-none">Privacy-focused</Badge>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
 
