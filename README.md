@@ -82,7 +82,7 @@ The application will be accessible at `http://localhost:8080` (or another port i
 
 ## Deployment
 
-This project can be deployed to any static site hosting service (e.g., Vercel, Netlify, GitHub Pages) by building the project:
+This project can be deployed to any static site hosting service (e.g., Vercel, Netlify, GitHub Pages) by building the project:!
 
 ```bash
 npm run build
